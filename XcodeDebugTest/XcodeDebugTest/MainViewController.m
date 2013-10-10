@@ -38,6 +38,8 @@
 {
     [super viewDidLoad];
     
+    [BugSenseController leaveBreadcrumb:@"MainViewController"];
+    
     self.view.backgroundColor = [UIColor blueColor];
 }
 

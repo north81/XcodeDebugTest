@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <BugSense-iOS/BugSenseController.h>
 #import "EnvironmentDevices.h"
 #import "MainViewController.h"
 
@@ -19,7 +18,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    [BugSenseController sharedControllerWithBugSenseAPIKey:@"22ecd2a6"];
+    [BugSenseController sharedControllerWithBugSenseAPIKey:@"22ecd2a6"
+                                            userDictionary:nil
+                                           sendImmediately:YES];
+    [BugSenseController setUsesProxy:YES];
+    [BugSenseController leaveBreadcrumb:@"AppDelegate"];
     
     self.phone = (EnvironmentDevices.isPhone)?(@"iPhone"):(@"iPad");
     self.ios7 = (EnvironmentDevices.isIOS7)?(@"iOS7"):(@"OldVersion");
