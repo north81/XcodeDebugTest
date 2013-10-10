@@ -23,6 +23,9 @@
 		950FA4151806A06E0067CDD7 /* XcodeDebugTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4141806A06E0067CDD7 /* XcodeDebugTestTests.m */; };
 		950FA4221806A17C0067CDD7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4211806A17C0067CDD7 /* MainViewController.m */; };
 		950FA4261806A1EA0067CDD7 /* EnvironmentDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */; };
+		950FA4281806A5670067CDD7 /* BugSense-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA4271806A5670067CDD7 /* BugSense-iOS.framework */; };
+		950FA42A1806A5790067CDD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA4291806A5790067CDD7 /* SystemConfiguration.framework */; };
+		950FA42C1806A5820067CDD7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA42B1806A5820067CDD7 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		950FA4211806A17C0067CDD7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		950FA4241806A1EA0067CDD7 /* EnvironmentDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentDevices.h; sourceTree = "<group>"; };
 		950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentDevices.m; sourceTree = "<group>"; };
+		950FA4271806A5670067CDD7 /* BugSense-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BugSense-iOS.framework"; path = "../asset/frameworks/BugSense-iOS.framework"; sourceTree = "<group>"; };
+		950FA4291806A5790067CDD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		950FA42B1806A5820067CDD7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950FA42C1806A5820067CDD7 /* libz.dylib in Frameworks */,
+				950FA42A1806A5790067CDD7 /* SystemConfiguration.framework in Frameworks */,
+				950FA4281806A5670067CDD7 /* BugSense-iOS.framework in Frameworks */,
 				950FA3EA1806A06E0067CDD7 /* UIKit.framework in Frameworks */,
 				950FA3EC1806A06E0067CDD7 /* Foundation.framework in Frameworks */,
 				950FA3EE1806A06E0067CDD7 /* CoreGraphics.framework in Frameworks */,
@@ -107,6 +116,9 @@
 		950FA3E81806A06E0067CDD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				950FA42B1806A5820067CDD7 /* libz.dylib */,
+				950FA4291806A5790067CDD7 /* SystemConfiguration.framework */,
+				950FA4271806A5670067CDD7 /* BugSense-iOS.framework */,
 				950FA3E91806A06E0067CDD7 /* UIKit.framework */,
 				950FA3EB1806A06E0067CDD7 /* Foundation.framework */,
 				950FA3ED1806A06E0067CDD7 /* CoreGraphics.framework */,
@@ -401,6 +413,10 @@
 		950FA4191806A06E0067CDD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../asset/frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeDebugTest/XcodeDebugTest-Prefix.pch";
 				INFOPLIST_FILE = "XcodeDebugTest/XcodeDebugTest-Info.plist";
@@ -412,6 +428,10 @@
 		950FA41A1806A06E0067CDD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../asset/frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeDebugTest/XcodeDebugTest-Prefix.pch";
 				INFOPLIST_FILE = "XcodeDebugTest/XcodeDebugTest-Info.plist";
