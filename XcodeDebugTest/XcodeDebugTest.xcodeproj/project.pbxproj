@@ -21,6 +21,8 @@
 		950FA40A1806A06E0067CDD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA3EB1806A06E0067CDD7 /* Foundation.framework */; };
 		950FA4121806A06E0067CDD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 950FA4101806A06E0067CDD7 /* InfoPlist.strings */; };
 		950FA4151806A06E0067CDD7 /* XcodeDebugTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4141806A06E0067CDD7 /* XcodeDebugTestTests.m */; };
+		950FA4221806A17C0067CDD7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4211806A17C0067CDD7 /* MainViewController.m */; };
+		950FA4261806A1EA0067CDD7 /* EnvironmentDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		950FA4111806A06E0067CDD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		950FA4131806A06E0067CDD7 /* XcodeDebugTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeDebugTestTests.h; sourceTree = "<group>"; };
 		950FA4141806A06E0067CDD7 /* XcodeDebugTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeDebugTestTests.m; sourceTree = "<group>"; };
+		950FA4201806A17C0067CDD7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		950FA4211806A17C0067CDD7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		950FA4241806A1EA0067CDD7 /* EnvironmentDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentDevices.h; sourceTree = "<group>"; };
+		950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentDevices.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,9 @@
 		950FA3EF1806A06E0067CDD7 /* XcodeDebugTest */ = {
 			isa = PBXGroup;
 			children = (
-				950FA3F81806A06E0067CDD7 /* AppDelegate.h */,
-				950FA3F91806A06E0067CDD7 /* AppDelegate.m */,
+				950FA4231806A1CE0067CDD7 /* Utils */,
+				950FA41F1806A1740067CDD7 /* Main */,
+				950FA41E1806A1530067CDD7 /* AppDelegate */,
 				950FA3F01806A06E0067CDD7 /* Supporting Files */,
 			);
 			path = XcodeDebugTest;
@@ -150,6 +157,33 @@
 				950FA4101806A06E0067CDD7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		950FA41E1806A1530067CDD7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				950FA3F81806A06E0067CDD7 /* AppDelegate.h */,
+				950FA3F91806A06E0067CDD7 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		950FA41F1806A1740067CDD7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				950FA4201806A17C0067CDD7 /* MainViewController.h */,
+				950FA4211806A17C0067CDD7 /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		950FA4231806A1CE0067CDD7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				950FA4241806A1EA0067CDD7 /* EnvironmentDevices.h */,
+				950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +297,8 @@
 			files = (
 				950FA3F61806A06E0067CDD7 /* main.m in Sources */,
 				950FA3FA1806A06E0067CDD7 /* AppDelegate.m in Sources */,
+				950FA4221806A17C0067CDD7 /* MainViewController.m in Sources */,
+				950FA4261806A1EA0067CDD7 /* EnvironmentDevices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
