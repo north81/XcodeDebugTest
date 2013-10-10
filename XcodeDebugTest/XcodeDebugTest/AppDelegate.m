@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <BugSense-iOS/BugSenseController.h>
 #import "EnvironmentDevices.h"
 #import "MainViewController.h"
 
@@ -17,6 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [BugSenseController sharedControllerWithBugSenseAPIKey:@"22ecd2a6"];
     
     self.phone = (EnvironmentDevices.isPhone)?(@"iPhone"):(@"iPad");
     self.ios7 = (EnvironmentDevices.isIOS7)?(@"iOS7"):(@"OldVersion");
