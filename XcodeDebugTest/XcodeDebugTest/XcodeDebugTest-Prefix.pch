@@ -12,5 +12,4 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "AppDelegate.h"
-    #import <BugSense-iOS/BugSenseController.h>
 #endif

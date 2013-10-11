@@ -23,9 +23,10 @@
 		950FA4151806A06E0067CDD7 /* XcodeDebugTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4141806A06E0067CDD7 /* XcodeDebugTestTests.m */; };
 		950FA4221806A17C0067CDD7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4211806A17C0067CDD7 /* MainViewController.m */; };
 		950FA4261806A1EA0067CDD7 /* EnvironmentDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */; };
-		950FA4281806A5670067CDD7 /* BugSense-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA4271806A5670067CDD7 /* BugSense-iOS.framework */; };
-		950FA42A1806A5790067CDD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA4291806A5790067CDD7 /* SystemConfiguration.framework */; };
-		950FA42C1806A5820067CDD7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 950FA42B1806A5820067CDD7 /* libz.dylib */; };
+		954675061807D2F600835849 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954675051807D2F600835849 /* QuartzCore.framework */; };
+		954675081807D2FD00835849 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954675071807D2FD00835849 /* SystemConfiguration.framework */; };
+		9546750F1807D4FD00835849 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9546750D1807D4FD00835849 /* dsym_upload.sh */; };
+		954675101807D4FD00835849 /* libCrittercism_v4_0_7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9546750E1807D4FD00835849 /* libCrittercism_v4_0_7.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +63,13 @@
 		950FA4211806A17C0067CDD7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		950FA4241806A1EA0067CDD7 /* EnvironmentDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentDevices.h; sourceTree = "<group>"; };
 		950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentDevices.m; sourceTree = "<group>"; };
-		950FA4271806A5670067CDD7 /* BugSense-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BugSense-iOS.framework"; path = "../asset/frameworks/BugSense-iOS.framework"; sourceTree = "<group>"; };
-		950FA4291806A5790067CDD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		950FA42B1806A5820067CDD7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		954675051807D2F600835849 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		954675071807D2FD00835849 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9546750A1807D4FD00835849 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
+		9546750B1807D4FD00835849 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
+		9546750C1807D4FD00835849 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
+		9546750D1807D4FD00835849 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
+		9546750E1807D4FD00835849 /* libCrittercism_v4_0_7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v4_0_7.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				950FA42C1806A5820067CDD7 /* libz.dylib in Frameworks */,
-				950FA42A1806A5790067CDD7 /* SystemConfiguration.framework in Frameworks */,
-				950FA4281806A5670067CDD7 /* BugSense-iOS.framework in Frameworks */,
+				954675081807D2FD00835849 /* SystemConfiguration.framework in Frameworks */,
+				954675061807D2F600835849 /* QuartzCore.framework in Frameworks */,
 				950FA3EA1806A06E0067CDD7 /* UIKit.framework in Frameworks */,
 				950FA3EC1806A06E0067CDD7 /* Foundation.framework in Frameworks */,
 				950FA3EE1806A06E0067CDD7 /* CoreGraphics.framework in Frameworks */,
+				954675101807D4FD00835849 /* libCrittercism_v4_0_7.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +121,8 @@
 		950FA3E81806A06E0067CDD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				950FA42B1806A5820067CDD7 /* libz.dylib */,
-				950FA4291806A5790067CDD7 /* SystemConfiguration.framework */,
-				950FA4271806A5670067CDD7 /* BugSense-iOS.framework */,
+				954675071807D2FD00835849 /* SystemConfiguration.framework */,
+				954675051807D2F600835849 /* QuartzCore.framework */,
 				950FA3E91806A06E0067CDD7 /* UIKit.framework */,
 				950FA3EB1806A06E0067CDD7 /* Foundation.framework */,
 				950FA3ED1806A06E0067CDD7 /* CoreGraphics.framework */,
@@ -130,6 +134,7 @@
 		950FA3EF1806A06E0067CDD7 /* XcodeDebugTest */ = {
 			isa = PBXGroup;
 			children = (
+				954675091807D4FD00835849 /* CrittercismSDK */,
 				950FA4231806A1CE0067CDD7 /* Utils */,
 				950FA41F1806A1740067CDD7 /* Main */,
 				950FA41E1806A1530067CDD7 /* AppDelegate */,
@@ -196,6 +201,19 @@
 				950FA4251806A1EA0067CDD7 /* EnvironmentDevices.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		954675091807D4FD00835849 /* CrittercismSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9546750A1807D4FD00835849 /* CRFilter.h */,
+				9546750B1807D4FD00835849 /* Crittercism.h */,
+				9546750C1807D4FD00835849 /* CrittercismDelegate.h */,
+				9546750D1807D4FD00835849 /* dsym_upload.sh */,
+				9546750E1807D4FD00835849 /* libCrittercism_v4_0_7.a */,
+			);
+			name = CrittercismSDK;
+			path = ../../asset/frameworks/CrittercismSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +291,7 @@
 				950FA3FC1806A06E0067CDD7 /* Default.png in Resources */,
 				950FA3FE1806A06E0067CDD7 /* Default@2x.png in Resources */,
 				950FA4001806A06E0067CDD7 /* Default-568h@2x.png in Resources */,
+				9546750F1807D4FD00835849 /* dsym_upload.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +439,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeDebugTest/XcodeDebugTest-Prefix.pch";
 				INFOPLIST_FILE = "XcodeDebugTest/XcodeDebugTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../asset/frameworks/CrittercismSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -436,6 +459,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeDebugTest/XcodeDebugTest-Prefix.pch";
 				INFOPLIST_FILE = "XcodeDebugTest/XcodeDebugTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../asset/frameworks/CrittercismSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -495,6 +522,7 @@
 				950FA41A1806A06E0067CDD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		950FA41B1806A06E0067CDD7 /* Build configuration list for PBXNativeTarget "XcodeDebugTestTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +531,7 @@
 				950FA41D1806A06E0067CDD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

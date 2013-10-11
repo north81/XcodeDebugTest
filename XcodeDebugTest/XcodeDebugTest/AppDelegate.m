@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Crittercism.h"
 #import "EnvironmentDevices.h"
 #import "MainViewController.h"
 
@@ -18,11 +19,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    [BugSenseController sharedControllerWithBugSenseAPIKey:@"22ecd2a6"
-                                            userDictionary:nil
-                                           sendImmediately:YES];
-    [BugSenseController setUsesProxy:YES];
-    [BugSenseController leaveBreadcrumb:@"AppDelegate"];
+   [Crittercism enableWithAppID:@"525799b8558d6a22e8000008"];
     
     self.phone = (EnvironmentDevices.isPhone)?(@"iPhone"):(@"iPad");
     self.ios7 = (EnvironmentDevices.isIOS7)?(@"iOS7"):(@"OldVersion");
